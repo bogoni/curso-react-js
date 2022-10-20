@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Titulo from './components/Titulo';
 
 function App() {
+//nao precisa de ; eh o bloco que demarca inicio e fim
+  const aula = <> primeira aula</>
+
+  const chapters = ['um', 'dois']
+
+  const aula2 = (num) => {
+    return (
+      <> aula {num}</>
+    )
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Titulo/>
+    <hr/>
+    <h2>{aula}</h2>
+    <h2>{aula2(2)}</h2>
+ 
+
+
+{chapters.map((c, index) => {
+  return <p key={index}>{c}</p>
+})}
+
+</>
   );
 }
 
