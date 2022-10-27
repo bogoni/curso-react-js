@@ -1,7 +1,8 @@
 import React from 'react';
+import { StyledButton } from './styles.js'
 
-const Button = ({onClick, children}) => {
-    return <button onClick={onClick}>{children}</button>
+const Button = ({onClick, children, variant}) => {
+    return <StyledButton variant={variant} onClick={onClick}>{children}</StyledButton>
 }
 
 export default Button;
