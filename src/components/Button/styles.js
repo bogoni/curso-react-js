@@ -3,6 +3,10 @@ import styled, { css } from 'styled-components';
 export const StyledButton = styled.button`
     padding: 10px;
     border-radius: 4px;
+    img{
+        width: 16px;
+        margin-right: 5px;
+    }
     ${props =>
         props.variant === 'Success' ?
             css`         

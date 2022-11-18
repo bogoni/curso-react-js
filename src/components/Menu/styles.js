@@ -1,4 +1,5 @@
 import styled, {css} from 'styled-components';
+import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
     background: ${({ theme }) => theme.colors.background };
@@ -11,7 +12,7 @@ export const Nav = styled.nav`
     }
 `;
 
-export const LinkNav = styled.a`
+export const LinkNav = styled(Link)`
     color: ${({ theme }) => theme.colors.mainColor };  
     font-size: 20px;
     padding: 0 40px;
