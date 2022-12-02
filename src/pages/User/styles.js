@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+const Container = styled.div`
     input {
         width: 400px;
         padding: 10px;
@@ -10,8 +10,4 @@ export const Container = styled.div`
         margin-bottom: 10px;
     }
 `
-
-export const Mensagem = styled.p`
-    color: red;
-    font-weight: bold;
-`
+export default Container

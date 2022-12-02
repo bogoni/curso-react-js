@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, {css} from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     h1{
         margin-right: 60px;
     }
-`;
+`
 
 export const LinkNav = styled(Link)`
     color: ${({ theme }) => theme.colors.mainColor };  
@@ -22,13 +22,20 @@ export const LinkNav = styled(Link)`
     border-right: 1px dashed white;
 
     ${props =>
-        props.active &&
+    props.active &&
         css`
         background: black;
         color: #e89900;
         `
-    }
+}
     &:hover {
         text-decoration: underline;
     }
-`;
+`
+
+export const UserContainer = styled.div`
+  align-self: center;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+`

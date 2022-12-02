@@ -1,15 +1,15 @@
-import axios from 'axios';
-import configureMock from './configureMock';
+import axios from 'axios'
+import configureMock from './configureMock'
 
-const mockRequest = false;
+const mockRequest = false
 
-const baseURL = 'https://professorfeijo.com.br/tt/api-php';
+const baseURL = 'https://professorfeijo.com.br/tt/api-php'
 
 const api = axios.create({
-    baseURL
-});
+  baseURL
+})
 
 if (mockRequest){//
-    configureMock(api)
+  configureMock(api)
 }
-export default api;
+export default api
